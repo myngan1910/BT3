@@ -1,0 +1,18 @@
+
+.bd{
+    display: flex;
+    justify-content: center;
+}
+.for{
+    margin-top: 50px;
+    margin-left: 130px;
+
+}
+
+form{
+    margin-top: 50px;
+    margin-right: 700px;
+}
+.login{
+    margin-top:  10px;
+}
