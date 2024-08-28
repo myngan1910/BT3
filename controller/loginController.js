@@ -12,7 +12,7 @@ module.exports = {
       if(pass[0].user == name && pass[0].pass == passs){
         req.session.userId = pass[0].id;
         
-        res.redirect(`/admin/userInfo`);
+        res.redirect(`/admin`);
       } else{
         res.redirect('/login')
       }

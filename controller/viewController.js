@@ -11,7 +11,7 @@ module.exports = {
     getViewUser: async(req,res) => {
         const genId = parseInt(req.params.ID);
         const getlist = await ViewModel.getViewUser(genId);
-        return res.render("userDetail", {userDetail: getlist[0]})
+        return res.render("userDetail", {userDetail: getlist})
 
     },
     deleViewUser: async(req,res) => {
@@ -55,7 +55,7 @@ module.exports = {
     detailEdu: async(req,res) => {
         const genId = parseInt(req.params.ID);
         const detailEdu =  await ViewModel.detailEdu(genId)
-        return res.render("eduDetail", {eduDetail: detailEdu[0]})
+        return res.render("eduDetail", {eduDetail: detailEdu})
     },
     deleEdu: async(req,res) => {
         const genId = parseInt(req.params.ID);
@@ -96,7 +96,7 @@ module.exports = {
        
         const genId = parseInt(req.params.ID);
         const detailskill=  await ViewModel.detailskill(genId)
-        return res.render("skillDetail", {skillDetail: detailskill[0]})
+        return res.render("skillDetail", {skillDetail: detailskill})
       
        
     },
@@ -142,7 +142,7 @@ module.exports = {
         
       
         const detailExp=  await ViewModel.detailExp(genId)
-        return res.render("expDetail", {expDetail: detailExp[0]})
+        return res.render("expDetail", {expDetail: detailExp})
       
       
        
@@ -188,7 +188,7 @@ module.exports = {
        
         const genId = parseInt(req.params.ID);
         const detailPro=  await ViewModel.detailPro(genId)
-        return res.render("proDetail", {proDetail: detailPro[0]})
+        return res.render("proDetail", {proDetail: detailPro})
       
       
         
@@ -238,7 +238,7 @@ module.exports = {
     detailCtc: async(req,res) => {
         const genId = parseInt(req.params.ID);
         const detailCtc =  await ViewModel.detailCtc(genId)
-        return res.render("ctcDetail", {ctcDetail: detailCtc[0]})
+        return res.render("ctcDetail", {ctcDetail: detailCtc})
     },
     deleCtc: async(req,res) => {
         const genId = parseInt(req.params.ID);
@@ -277,7 +277,7 @@ module.exports = {
         const genId = parseInt(req.params.ID);
        
         const detailport=  await ViewModel.detailPort(genId)
-        return res.render("portDetail", {portDetail: detailport[0]})
+        return res.render("portDetail", {portDetail: detailport})
        
     },
     delePort: async(req,res) => {
@@ -313,7 +313,7 @@ module.exports = {
     detailClient: async(req,res) => {
         const genId = parseInt(req.params.ID);
         const detailClient=  await ViewModel.detailClient(genId)
-        return res.render("clientDetail", {clientDetail: detailClient[0]})
+        return res.render("clientDetail", {clientDetail: detailClient})
        
     },
     deleClient: async(req,res) => {
@@ -346,7 +346,7 @@ module.exports = {
     detailSo: async(req,res) => {
         const genId = parseInt(req.params.ID);
         const deta=  await ViewModel.detailSo(genId)
-        return res.render("soDetail", {soDetail: deta[0]})
+        return res.render("soDetail", {soDetail: deta})
        
     },
     deleSo: async(req,res) => {
